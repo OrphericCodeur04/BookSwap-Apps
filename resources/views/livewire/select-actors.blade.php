@@ -12,7 +12,7 @@
                     {{ $actor }}
                 </option>
                 @endforeach
-        </select> 
+        </select>
     
 
         <!-- ******************* -->
