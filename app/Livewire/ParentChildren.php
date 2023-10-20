@@ -27,7 +27,7 @@ class ParentChildren extends Component
     }
 
     public function removeProduct($index): void {
-        unset($this->orderProducts[index]);
+        unset($this->orderProducts[$index]);
 
         $this->orderProducts = array_values($this->orderProducts);
     }
