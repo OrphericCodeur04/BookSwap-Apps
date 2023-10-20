@@ -12,9 +12,9 @@ class ParentChildren extends Component
 
     public string $customer_email = '';
 
-    public Collection allProducts;
+    public Collection $allProducts;
 
-    public array orderProducts = [];
+    public array $orderProducts = [];
 
     public function mount(): void {
         $this->allProducts = AppleProduct::all();

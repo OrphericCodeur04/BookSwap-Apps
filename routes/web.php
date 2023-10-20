@@ -19,6 +19,8 @@ use App\Livewire\Dropdowns;
 
 Route::get('/select/actors-and-best-films', \App\Livewire\SelectActors::class)->name('select.actors');
 
+Route::get('/apple/products', \App\Livewire\ParentChildren::class)->name('apple.products');
+
 Route::get('dropdown', Dropdowns::class);
 
 Route::get('/show/books', ShowBooks::class);
