@@ -22,6 +22,10 @@ class ParentChildren extends Component
         $this->orderProducts[] = ['product_id' => '', 'quantity' => 1];
     }
 
+    public function addProduct(): void {
+        $this->orderProducts[] = ['product_id' => '', 'quantity' => 1];
+    }
+
     public function removeProduct($index): void {
         unset($this->orderProducts[index]);
 

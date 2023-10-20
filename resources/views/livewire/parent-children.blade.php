@@ -54,7 +54,7 @@
                     </tbody>
                 </table>
     
-                <button type="button" class="mt-4 px-4 py-2 bg-gray-800 rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700">
+                <button wire:click="addProduct" type="button" class="mt-4 px-4 py-2 bg-gray-800 rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700"> 
                     + Add Another Product
                 </button>
             </div>
