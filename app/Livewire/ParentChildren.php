@@ -22,6 +22,12 @@ class ParentChildren extends Component
         $this->orderProducts[] = ['product_id' => '', 'quantity' => 1];
     }
 
+    public function removeProduct($index): void {
+        unset($this->orderProducts[index]);
+
+        $this->orderProducts = array_values($this->orderProducts);
+    }
+
     public function render()
     {
         return view('livewire.parent-children');

@@ -45,7 +45,7 @@
                                     <input wire:model="orderProducts.{{ $index }}.quantity" id="orderProducts[{{ $index }}][price]" class="block mt-1 w-full border-gray-300 rounded-md shadow-sm" type="number" />
                                 </td>
                                 <td class="px-2 py-2">
-                                    <button type="button" class="px-3 py-2 bg-red-600 rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-500">
+                                    <button wire:click="removeProduct({{ $index }})" type="button" class="px-3 py-2 bg-red-600 rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-500"> 
                                         Delete
                                     </button>
                                 </td>
