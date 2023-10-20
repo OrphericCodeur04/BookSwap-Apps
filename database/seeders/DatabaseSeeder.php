@@ -12,6 +12,8 @@ use App\Models\Actor;
 use App\Models\Author;
 use App\Models\Book;
 
+use App\Models\AppleProduct;
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -49,6 +51,7 @@ class DatabaseSeeder extends Seeder
        //$country->cities()->create(['name' => 'New York City']);
        //$country->cities()->create(['name' => 'Denver']);
 
+       /*
        $actor = Actor::create(['name' => 'Leonardo DiCaprio']);
        $actor->films()->create(['name' => 'Titanic (1997)']);
        $actor->films()->create(['name' => 'The Departed (2006)']);
@@ -84,5 +87,11 @@ class DatabaseSeeder extends Seeder
        $actor->films()->create(['name' => 'Erin Brockovich (2000)']);
        $actor->films()->create(['name' => 'Notting Hill (1999)']);
        $actor->films()->create(['name' => 'Wonder (2017)']);
+
+       */
+
+        AppleProduct::create(['name' => 'iPhone', 'price' => 999.99]);
+        AppleProduct::create(['name' => 'iPad', 'price' => 699.99]);
+        AppleProduct::create(['name' => 'iMac', 'price' => 1999.99]);
     }
 }
