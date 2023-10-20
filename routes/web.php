@@ -21,6 +21,8 @@ Route::get('/select/actors-and-best-films', \App\Livewire\SelectActors::class)->
 
 Route::get('/apple/products', \App\Livewire\ParentChildren::class)->name('apple.products');
 
+Route::get('/edit/apple/products', \App\Livewire\EditModal::class)->name('apple.products');
+
 Route::get('dropdown', Dropdowns::class);
 
 Route::get('/show/books', ShowBooks::class);

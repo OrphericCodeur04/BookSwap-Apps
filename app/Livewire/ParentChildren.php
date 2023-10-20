@@ -27,9 +27,9 @@ class ParentChildren extends Component
     }
 
     public function removeProduct($index): void {
-        unset($this->orderProducts[$index]);
+        unset($this->orderProducts[$index]); // supprimer le produit du tableau 
 
-        $this->orderProducts = array_values($this->orderProducts);
+        $this->orderProducts = array_values($this->orderProducts); // reindexer les valeurs du tableau
     }
 
     public function render()
